@@ -1,21 +1,11 @@
-<!DOCTYPE html>
-<html>
-<head>
-    <title>Welcome to TODOParrot</title>
-</head>
-<body>
-    <h1>Welcome to TODOParrot</h1>
-    {{-- Output the $name variable. --}}
-    <p>{{ $name or "Hank Chen" }}</p>
+@extends('layouts.master')
 
-    {{ 'My list <script>alert("spam spam!")</script>' }}
+@section('content')
 
-    <ul>
-      @forelse ($lists as $list)
-        <li>{{ $list }}</li>
-      @empty
-        <li>None lists saved.</li>
-      @endforelse
-    </ul>
-</body>
-</html>
+<h1>Welcome to TODOParrot</h1>
+
+<p>
+  TODOParrot is a good app.
+</p>
+
+@endsection
