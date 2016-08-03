@@ -10,6 +10,10 @@ class WelcomeController extends Controller
 {
   function index()
   {
-    return view('welcome');
+    $lists = array('Vacation Planning', 'Grocery Shopping', 'Camping Trip');
+    // $lists = array();
+    return view('welcome')
+            ->with('name', 'San Juan Vacation')
+            ->with('lists', $lists);
   }
 }
