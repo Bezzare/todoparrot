@@ -8,4 +8,6 @@
   TODOParrot is a good app.
 </p>
 
+{!! HTML::image('images/arrow.png', 'Arrow') !!}
+
 @endsection
